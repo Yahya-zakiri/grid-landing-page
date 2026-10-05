@@ -65,6 +65,24 @@ nav div {
     align-items: center;
 }
 
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
 .hero{
     padding: 20vh 35px 45px 35px;
     font-size: 17px;

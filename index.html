@@ -17,12 +17,12 @@
 <body>
 
 <div class="container">
-  <nav>
+  <nav aria-label="Primary navigation">
     <div><span class="circle"></span>Bridge Collective</div>
-    <div>
-      <img src="./assets/images/icon-menu.svg" alt="menu icon" width="24" height="24" id="menu-icon" class="">
-      <img src="./assets/images/icon-close.svg" alt="menu icon" width="24" height="24" id="close-icon" class="noDisplay">
-    </div>
+    <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menu-panel">
+      <img src="./assets/images/icon-menu.svg" alt="" aria-hidden="true" width="24" height="24" id="menu-icon">
+      <img src="./assets/images/icon-close.svg" alt="" aria-hidden="true" width="24" height="24" id="close-icon" class="noDisplay">
+    </button>
   </nav>
 
 <main>
@@ -34,7 +34,7 @@
 
 <div class="stats-container">
   <section class="stats">
-  <img src="./assets/images/icon-sparkle.svg" alt="icon-sparkle" height="40" width="40">
+  <img src="./assets/images/icon-sparkle.svg" alt="" aria-hidden="true" height="40" width="40">
   <p>2.4M</p>
   <div>
   <p>Students reached</p>
@@ -43,7 +43,7 @@
     </section>
 
    <section class="stats">
-    <img src="./assets/images/icon-plus.svg" alt="icon-plus" height="40" width="40"> 
+    <img src="./assets/images/icon-plus.svg" alt="" aria-hidden="true" height="40" width="40">
   <p>1,284</p>
   <div>
   <p>Schools partnered</p>
@@ -52,7 +52,7 @@
     </section>
 
   <section class="stats">
-    <img src="./assets/images/icon-arrow-right.svg" alt="icon-arrow-right" width="40" width="40">
+    <img src="./assets/images/icon-arrow-right.svg" alt="" aria-hidden="true" width="40" height="40">
   <p>38K</p>
   <div>
   <p>Teachers trained</p>
@@ -61,7 +61,7 @@
     </section>
 
   <section class="stats">
-    <img src="./assets/images/icon-trending-up.svg" alt="icon-trending-up" width="40" height="40">
+    <img src="./assets/images/icon-trending-up.svg" alt="" aria-hidden="true" width="40" height="40">
   <p>3.1×</p>
   <div>
   <p>Graduation lift</p>
@@ -75,7 +75,7 @@
   <p>Registered charity 12345678</p>
 </footer>
 
-  <div class="menu noDisplay" id="menu-panel">
+  <div class="menu" id="menu-panel" role="region" aria-label="Main menu" hidden>
   <ul>
     <li class="hover">About</li>
     <li class="hover">Our Work</li>
